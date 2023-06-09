@@ -1,3 +1,9 @@
+"""
+Problem:
+
+https://leetcode.com/problems/binary-tree-level-order-traversal/
+"""
+
 from typing import Optional
 from collections import deque
 
@@ -20,7 +26,6 @@ class Solution:
             for _ in range(qLen):
                 node = q.popleft()
                 if node:
-
                     level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
